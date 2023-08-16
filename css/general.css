@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&family=Handlee&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #2a0944;
+  --cor1-1: #553a69;
+  --cor1-2: #9584a2;
+  --cor1-3: #d4ceda;
+
+  --cor2: #fec260;
+  --cor2-1: #cb9b4d;
+  --cor2-2: #fed490;
+  --cor2-3: #ffedcf;
+  --cor2-4: #fff9ef;
+  --cor2-5: #332713;
+  --cor2-6: #4c3a1d;
+
+  --fonte-padrao: "Exo", sans-serif;
+  --fonte-cursiva: "Handlee", cursive;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #d4ceda30;
+  font-family: var(--fonte-padrao);
+
+  position: relative;
+}
+
+nav::before {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  display: block;
+  background-color: var(--cor1);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  line-height: 1.6;
+  margin: 1rem 0 1rem 0;
+}
+
+strong {
+  color: var(--cor1);
+}
+
+.container-center {
+  max-width: 130rem;
+  padding: 2.4rem 3.2rem;
+  margin: 0 auto 9.6rem auto;
+
+  border-radius: 0.5rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.heading-secondary,
+.heading-terciary {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.heading-secondary {
+  font-size: 1.8rem;
+}
+
+.heading-terciary {
+  font-size: 1.4rem;
+  color: var(--cor1);
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--cor2-1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+/* HEADER E NAV */
+
+.main-nav {
+  box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.15);
+  background-color: var(--cor2-3);
+  height: 80px;
+  width: 100%;
+  padding: 1rem 2rem 0 2rem;
+
+  position: relative;
+}
+
+/* .main-nav-list li {
+  z-index: 99999999;
+} */
+
+.imgs-nav div {
+  position: absolute;
+}
+
+.nav-img {
+  height: 75px;
+  opacity: 0.7;
+}
+
+.nav-img:hover {
+  opacity: 1;
+}
+
+.first-column {
+  top: 30%;
+  left: 5%;
+}
+
+.second-column {
+  top: 10%;
+  left: 90%;
+}
+
+.img-cinema {
+  transform: rotate(-25deg);
+  position: relative;
+}
+
+.img-smile {
+  position: absolute;
+  top: 80%;
+  left: 90%;
+}
+
+.img-lampada {
+  position: relative;
+}
+
+.img-books {
+  transform: rotate(15deg);
+  position: absolute;
+  top: 80%;
+  left: -95%;
+}
+
+.main-nav-list {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin: 2.4rem 0 2.4rem 0;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--cor1);
+  transition: all 0.3s;
+}
+
+.main-nav-link:active,
+.main-nav-link:hover {
+  text-decoration: underline;
+  color: var(--cor2-1);
+}
+
+.dot-nav {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: var(--cor2);
+  margin: 0;
+}
+
+/* .header-img {
+  width: 100%;
+  height: min-content;
+} */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 40px;
+
+  margin-bottom: 4.8rem;
+
+  width: 100%;
+}
+
+.title-box {
+  display: grid;
+  grid-template-columns: 1fr 4.5fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 0 auto 4.8rem auto;
+}
+
+.header-img {
+  height: 120px;
+  width: auto;
+  justify-self: end;
+  grid-row: span 2;
+}
+
+.header-title {
+  font-family: var(--fonte-cursiva);
+  font-size: 8.6rem;
+  grid-column: 2;
+  color: var(--cor1);
+
+  position: relative;
+}
+
+.header-title::before {
+  content: "Livros, filmes & séries";
+  font-size: 1.8rem;
+  color: #332f22;
+  font-family: var(--fonte-padrao);
+  font-weight: 400;
+  top: 85px;
+  left: 5px;
+
+  position: absolute;
+  color: var(--cor1-1);
+}
+
+.section-me {
+  grid-column: 2;
+  padding: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-image: url("../imagens/fundo.jpg");
+  background-repeat: no-repeat;
+  background-color: #d4ceda33;
+}
+
+.me-img {
+  border-radius: 50%;
+  background-image: url("../imagens/eu-grande.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 270px;
+  margin-bottom: 1rem;
+}
+
+.me-name {
+  font-size: 3.6rem;
+  font-family: var(--fonte-cursiva);
+  color: var(--cor1-1);
+  margin: 0;
+}
+
+.me-description {
+  font-size: 1.4rem;
+  margin-top: 1.6rem;
+}
+
+.contato-box ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.contato {
+  width: 36px;
+  height: 36px;
+  background-color: var(--cor2);
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-icon {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+}
+
+footer {
+  height: 5rem;
+  color: #332713;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* MOBILE */
+/* .btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+} */

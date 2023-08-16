@@ -4,206 +4,246 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lendo e Resenhando</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Resenhando</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="main-header">
-      <img src="imagens/logo2-70.png" alt="logo" style="margin: 0px" />
-      <h1>Resenhando</h1>
-      <p>AQUI VOCÊ ENCONTRARÁ DIVERSAS RESENHAS DE LIVROS</p>
-      <nav>
-        <a href="index.html" rel="prev">Home</a>
-        <a href="romance.html" target="_self" rel="next">Romance</a>
-        <a href="classicos.html">Clássicos</a>
-        <a href="ficçao.html">Ficção Científica</a>
-        <a href="açao.html">Ação/Aventura</a>
-        <a href="misterio.html">Mistério/Suspense</a>
-        <a href="#">Outros</a>
+      <nav class="nav-open main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="index.html" rel="prev" class="main-nav-link">Home</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="classicos.html" class="main-nav-link">Clássicos</a></li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a href="ficçao.html" class="main-nav-link">Ficção Científica</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="açao.html" class="main-nav-link">Ação/Aventura</a></li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a href="misterio.html" class="main-nav-link">Mistério/Suspense</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a
+              href="romance.html"
+              target="_self"
+              rel="next"
+              class="main-nav-link"
+              >Romance</a
+            >
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="#" class="main-nav-link">Outros</a></li>
+        </ul>
+        <!-- <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button> -->
+        <div class="imgs-nav">
+          <div class="first-column">
+            <img src="imagens/cinema.png" alt="" class="nav-img img-cinema" />
+            <img src="imagens/smile.svg" alt="" class="nav-img img-smile" />
+          </div>
+          <div class="second-column">
+            <img src="imagens/books.svg" alt="" class="nav-img img-books" />
+            <img src="imagens/lampada.svg" alt="" class="nav-img img-lampada" />
+          </div>
+        </div>
       </nav>
+
+      <div class="title-box">
+        <img src="imagens/icon.png" alt="Ícone da página" class="header-img" />
+        <h1 class="header-title">Resenhando</h1>
+      </div>
     </header>
+    <!-- <img src="imagens/Resenhando (100 × 57 px).png" alt="" /> -->
 
-    <div class="container">
-      <div class="sobre-blog">
-        <h1>SOBRE O BLOG</h1>
-        <p>
-          Este blog foi criado para <strong>compartilhar</strong> minhas
-          opiniões, sentimentos e <strong>amor</strong> por livros. Espero muito
-          que gostem e voltem outra vez!
-        </p>
-        <div class="img">
-          <picture>
-            <!-- <source
-              media="(max-width: 1050px)"
-              srcset="imagens/imagem01-100.png"
-              type="image/png"
-            /> -->
-            <img src="imagens/imagem01-200.png" />
-          </picture>
-          <picture>
-            <!-- <source
-              media="(max-width: 1050px)"
-              srcset="imagens/imagem02-100.png"
-              type="image/png"
-            /> -->
-            <img src="imagens/imagem02-200.png" />
-          </picture>
-          <picture>
-            <!-- <source
-              media="(max-width: 1050px)"
-              srcset="imagens/imagem03-100.png"
-              type="image/png"
-            /> -->
-            <img src="imagens/imagem03-200.png" />
-          </picture>
-        </div>
+    <div class="section-resenhas container-center">
+      <h2 class="heading-secondary resenhas-title center-text">Livros</h2>
+      <div class="container-resenhas center-text">
+        <a href="as-vantagens-de-ser-invisivel.html" class="card-link">
+          <div class="card">
+            <img src="imagens/capa01-original.jpg" class="img-card" />
+            <div class="content-card">
+              <h3 class="card-title heading-terciary">
+                As Vantagens de Ser Invisível
+              </h3>
+              <p class="card-author subtitle">Stephen Chbosky</p>
+            </div>
+          </div>
+        </a>
+        <a href="jogos-vorazes.html" class="card-link">
+          <div class="card">
+            <img src="imagens/capa02-original.jpg" class="img-card" />
+            <div class="content-card">
+              <h3 class="card-title heading-terciary">Jogos Vorazes</h3>
+              <p class="card-author subtitle">Suzanne Collins</p>
+            </div>
+          </div>
+        </a>
+        <a href="orgulho-e-preconceito.html" class="card-link">
+          <div class="card">
+            <img src="imagens/capa03-original.jpg" class="img-card" />
+            <div class="content-card">
+              <h3 class="card-title heading-terciary">Orgulho e Preconceito</h3>
+              <p class="card-author subtitle">Jane Austen</p>
+            </div>
+          </div>
+        </a>
+        <a href="homem-de-giz.html" class="card-link">
+          <div class="card">
+            <img src="imagens/capa04-original.jpg" class="img-card" />
+            <div class="content-card">
+              <h3 class="card-title heading-terciary">Homem de Giz</h3>
+              <p class="card-author subtitle">C.J. Tudor</p>
+            </div>
+          </div>
+        </a>
+        <a href="harry-potter-e-a-pedra-filosofal.html" class="card-link">
+          <div class="card">
+            <img src="imagens/capa05-original.jpg" class="img-card" />
+            <div class="content-card">
+              <h3 class="card-title heading-terciary">
+                Harry Potter e a Pedra Filosofal
+              </h3>
+              <p class="card-author subtitle">J. K. Rowling</p>
+            </div>
+          </div>
+        </a>
       </div>
 
-      <div class="resenhas">
-        <h1>RESENHAS</h1>
-        <div class="container-resenhas">
-          <div class="card">
-            <h1>Resenha #01</h1>
-            <div class="img">
-              <img src="imagens/capa01-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                Livro escrito por Stephen Chbosky e publicado em 1999, “As
-                Vantagens de Ser Invisível” é um drama que conta a história de
-                Charlie, um garoto de 15 anos que acaba de perder seu melhor
-                amigo para depressão.
-              </p>
-            </div>
-            <a href="01.html">Leia mais</a>
-          </div>
-          <div class="card">
-            <h1>Resenha #02</h1>
-            <div class="img">
-              <img src="imagens/capa02-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                “Jogos Vorazes”, publicado no Brasil pela Editora Rocco, faz jus
-                a todas as críticas positivas lidas sobre ele. O livro é
-                emocionante, cativante e com uma forte crítica social embutida
-                na caracterização dessa distopia...
-              </p>
-            </div>
-            <a href="02.html">Leia mais</a>
-          </div>
-          <div class="card">
-            <h1>Resenha #03</h1>
-            <div class="img">
-              <img src="imagens/capa03-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                É uma verdade universalmente conhecida que Orgulho e Preconceito
-                é um dos romances mais icônicos do século XIX e Jane Austen
-                conquistou isso sem nos presentear com um único beijo.
-              </p>
-            </div>
-            <a href="03.html">Leia mais</a>
-          </div>
-          <div class="card">
-            <h1>Resenha #04</h1>
-            <div class="img">
-              <img src="imagens/capa04-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                Homem de Giz é o romance de estreia de C.J. Tudor. Mesclando uma
-                narrativa que se alterna entre passado e presente, a autora cria
-                com habilidade não apenas a atmosfera de suspense essencial em
-                um thriller, mas...
-              </p>
-            </div>
-            <a href="04.html">Leia mais</a>
-          </div>
-          <div class="card">
-            <h1>Resenha #05</h1>
-            <div class="img">
-              <img src="imagens/capa05-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                Harry Potter, (O Armário sob a Escada, Rua dos Alfeneiros 4,
-                Little Whinging, Surrey) é um garoto de 10 anos órfão de pai e
-                mãe -supostamente mortos em um acidente de carro...
-              </p>
-            </div>
-            <a href="05.html">Leia mais</a>
-          </div>
-        </div>
-      </div>
-      <div class="sobre-mim">
-        <h1>SOBRE MIM</h1>
-        <picture class="eu">
-          <!-- <source
-            media="(max-width: 750px)"
-            srcset="imagens/eu-pequena.png"
-            type="image/png"
-          />
-          <source
-            media="(max-width: 1050px)"
-            srcset="imagens/eu-média.png"
-            type="image/png"
-          /> -->
-          <img src="imagens/eu-grande.png" alt="Imagem flexível" width="200" />
-        </picture>
-        <p>
-          Olá, meu nome é <strong>Lívia</strong>, estou cursando Ciência da
-          Computação na Universidade Estadual Paulista e tenho 18 anos. Sou
-          apaixonada por séries, filmes, livros e tudo que nos ajuda a saírmos
-          um pouco da realidade.
-        </p>
-        <p>Entre em contato comigo!</p>
-        <ul class="list-contato">
-          <li class="contato">
-            <img src="imagens/email.png" alt="ícone email" />
-            <a
-              href="mailto:liviagomes30@gmail.com"
-              target="_blank"
-              rel="external"
-              >/liviagomes30@gmail.com</a
-            >
+      <div class="dots-box">
+        <ul class="dots-list">
+          <li>
+            <button class="btn btn--left">
+              <ion-icon name="chevron-back" class="btn-icon"></ion-icon>
+            </button>
           </li>
-          <li class="contato">
-            <img src="imagens/instagram.png" alt="ícone instagram" />
-            <a
-              href="https://www.instagram.com/liviagomes30/?hl=pt-br"
-              target="_blank"
-              rel="external"
-              >/liviagomes30</a
-            >
-          </li>
-          <li class="contato">
-            <img src="imagens/facebook.png" alt="ícone facebook" />
-            <a
-              href="https://www.facebook.com/liviagomes30"
-              target="_blank"
-              rel="external"
-              >/liviagomes30</a
-            >
-          </li>
-          <li class="contato">
-            <img src="imagens/icongit.png" alt="ícone github" />
-            <a
-              href="https://github.com/liviagomes30"
-              target="_blank"
-              rel="external"
-              >/liviagomes30</a
-            >
+          <li><button class="dot dot--fill">&nbsp;</button></li>
+          <li><button class="dot">&nbsp;</button></li>
+          <li><button class="dot">&nbsp;</button></li>
+          <li>
+            <button class="btn btn--right">
+              <ion-icon name="chevron-forward" class="btn-icon"></ion-icon>
+            </button>
           </li>
         </ul>
       </div>
     </div>
 
-    <footer>
-      © 2022 RESENHANDO • TODOS OS DIREITOS RESERVADOS • DESENVOLVIDO POR LÍVIA
+    <div class="container-center grid">
+      <div class="last-post-container">
+        <h1 class="name-last-post">O Homem de Giz - C. J. Tudor</h1>
+        <div class="data-last-post-box">
+          <ion-icon name="calendar-outline" class="icon-data"></ion-icon>
+          <p class="data-last-post">12 jul, 2023</p>
+        </div>
+        <div class="last-post-content">
+          <div class="first-text">
+            <p>
+              Assassinato e sinais misteriosos em uma trama para fãs de Stranger
+              Things e Stephen King
+            </p>
+            <p>
+              Em 1986, Eddie e os amigos passam a maior parte dos dias andando
+              de bicicleta pela pacata vizinhança em busca de aventuras. Os
+              desenhos a giz são seu código secreto: homenzinhos rabiscados no
+              asfalto; mensagens que só eles entendem. Mas um desenho misterioso
+              leva o grupo de crianças até um corpo desmembrado e espalhado em
+              um bosque. Depois disso, nada mais é como antes.
+            </p>
+          </div>
+          <img class="img-last-post" src="imagens/img-homem-de-giz-2.jpg" />
+          <div class="last-text">
+            <p>
+              Em 2016, Eddie se esforça para superar o passado, até que um dia
+              ele e os amigos de infância recebem um mesmo aviso: o desenho de
+              um homem de giz enforcado. Quando um dos amigos aparece morto,
+              Eddie tem certeza de que precisa descobrir o que de fato aconteceu
+              trinta anos atrás.
+            </p>
+            <p>
+              Alternando habilidosamente entre presente e passado, O Homem de
+              Giz traz o melhor do suspense: personagens maravilhosamente
+              construídos, mistérios de prender o fôlego e reviravoltas que vão
+              impressionar até os leitores mais escaldados.
+            </p>
+          </div>
+        </div>
+        <div class="btn-continue-box">
+          <a href="homem-de-giz.html" target="_parent" class="btn-continue"
+            >Continue lendo</a
+          >
+        </div>
+      </div>
+
+      <div class="section-me">
+        <div class="me-img"></div>
+        <p class="me-name center-text">Lívia</p>
+        <div class="contato-box">
+          <ul class="me-list-contato">
+            <li class="contato">
+              <a
+                href="mailto:liviagomes30@gmail.com"
+                target="_blank"
+                rel="external"
+                ><ion-icon name="mail-outline" class="contato-icon"></ion-icon
+              ></a>
+            </li>
+            <li class="contato">
+              <a
+                href="https://www.instagram.com/liviagomes30/?hl=pt-br"
+                target="_blank"
+                rel="external"
+                ><ion-icon name="logo-instagram" class="contato-icon"></ion-icon
+              ></a>
+            </li>
+            <li class="contato">
+              <a
+                href="https://www.facebook.com/liviagomes30"
+                target="_blank"
+                rel="external"
+                ><ion-icon name="logo-facebook" class="contato-icon"></ion-icon
+              ></a>
+            </li>
+            <li class="contato">
+              <a
+                href="https://github.com/liviagomes30"
+                target="_blank"
+                rel="external"
+                ><ion-icon name="logo-github" class="contato-icon"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <p class="me-description center-text">
+          Olá, meu nome é <strong>Lívia</strong>, estou cursando Sistemas de
+          Informação, na Universidade Estadual Paulista. Sou apaixonada por
+          séries, filmes, livros e tudo que nos ajuda a saírmos um pouco da
+          realidade.
+        </p>
+      </div>
+    </div>
+
+    <footer class="center-text">
+      © 2023 RESENHANDO • TODOS OS DIREITOS RESERVADOS • DESENVOLVIDO POR LÍVIA
       GOMES
     </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

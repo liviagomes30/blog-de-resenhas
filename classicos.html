@@ -4,47 +4,150 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style2.css" />
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
     <title>Clássicos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <div class="container">
-      <header class="main-header">
-        <h1>Bem-vindo à sessão sobre Clássicos</h1>
-        <nav>
-          <a href="index.html" rel="prev">Home</a>
-          <a href="romance.html" target="_self" rel="next">Romance</a>
-          <a href="classicos.html">Clássicos</a>
-          <a href="ficçao.html">Ficção Científica</a>
-          <a href="açao.html">Ação/Aventura</a>
-          <a href="misterio.html">Mistério/Suspense</a>
-          <a href="#">Outros</a>
-        </nav>
-      </header>
-      <div class="resenhas">
-        <h1>RESENHAS</h1>
-        <div class="container-resenhas">
-          <div class="card">
-            <h1>Resenha #03</h1>
-            <div class="img">
-              <img src="imagens/capa03-150.jpg" />
-            </div>
-            <div class="content">
-              <p>
-                É uma verdade universalmente conhecida que Orgulho e Preconceito
-                é um dos romances mais icônicos do século XIX e Jane Austen
-                conquistou isso sem nos presentear com um único beijo.
-              </p>
-            </div>
-            <a href="03.html">Leia mais</a>
+    <header class="main-header">
+      <nav class="nav-open main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="index.html" rel="prev" class="main-nav-link">Home</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="classicos.html" class="main-nav-link">Clássicos</a></li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a href="ficçao.html" class="main-nav-link">Ficção Científica</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="açao.html" class="main-nav-link">Ação/Aventura</a></li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a href="misterio.html" class="main-nav-link">Mistério/Suspense</a>
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li>
+            <a
+              href="romance.html"
+              target="_self"
+              rel="next"
+              class="main-nav-link"
+              >Romance</a
+            >
+          </li>
+          <li><div class="dot-nav"></div></li>
+          <li><a href="#" class="main-nav-link">Outros</a></li>
+        </ul>
+        <!-- <button class="btn-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button> -->
+        <div class="imgs-nav">
+          <div class="first-column">
+            <img src="imagens/cinema.png" alt="" class="nav-img img-cinema" />
+            <img src="imagens/smile.svg" alt="" class="nav-img img-smile" />
+          </div>
+          <div class="second-column">
+            <img src="imagens/books.svg" alt="" class="nav-img img-books" />
+            <img src="imagens/lampada.svg" alt="" class="nav-img img-lampada" />
           </div>
         </div>
+      </nav>
+
+      <div class="title-box">
+        <img src="imagens/icon.png" alt="Ícone da página" class="header-img" />
+        <h1 class="header-title">Resenhando</h1>
       </div>
-      <footer>
+    </header>
+
+
+      <div class="container-center grid generos">
+        
+          <h1 class="center-text resenhas-title generos">Clássicos</h1>
+          <div class="container-resenhas generos">
+            <div class="card generos">
+              
+              <img src="imagens/img-orgulho-e-preconceito.jpg" class="img-card-generos"/>
+              
+              <div class="resenhas-text">
+                <h1 class="resenha-title">Orgulho e Preconceito - Jane Austen</h1>
+                <p>
+                  É uma verdade universalmente conhecida que Orgulho e Preconceito
+                é um dos romances mais icônicos do século XIX e Jane Austen
+                conquistou isso sem nos presentear com um único beijo. (...)
+                </p>
+              </div>
+              <a href="orgulho-e-preconceito.html" class="link-resenha">Leia mais</a>
+            </div>
+            
+        </div>
+      
+
+        <div class="section-me generos">
+          <div class="me-img"></div>
+          <p class="me-name center-text">Lívia</p>
+          <div class="contato-box">
+            <ul class="me-list-contato">
+              <li class="contato">
+                <a
+                  href="mailto:liviagomes30@gmail.com"
+                  target="_blank"
+                  rel="external"
+                  ><ion-icon name="mail-outline" class="contato-icon"></ion-icon
+                ></a>
+              </li>
+              <li class="contato">
+                <a
+                  href="https://www.instagram.com/liviagomes30/?hl=pt-br"
+                  target="_blank"
+                  rel="external"
+                  ><ion-icon name="logo-instagram" class="contato-icon"></ion-icon
+                ></a>
+              </li>
+              <li class="contato">
+                <a
+                  href="https://www.facebook.com/liviagomes30"
+                  target="_blank"
+                  rel="external"
+                  ><ion-icon name="logo-facebook" class="contato-icon"></ion-icon
+                ></a>
+              </li>
+              <li class="contato">
+                <a
+                  href="https://github.com/liviagomes30"
+                  target="_blank"
+                  rel="external"
+                  ><ion-icon name="logo-github" class="contato-icon"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <p class="me-description center-text">
+            Olá, meu nome é <strong>Lívia</strong>, estou cursando Sistemas de
+            Informação, na Universidade Estadual Paulista. Sou apaixonada por
+            séries, filmes, livros e tudo que nos ajuda a saírmos um pouco da
+            realidade.
+          </p>
+        </div>
+      </div>
+      <footer class="center-text">
         © 2022 RESENHANDO • TODOS OS DIREITOS RESERVADOS • DESENVOLVIDO POR
         LÍVIA GOMES
       </footer>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
